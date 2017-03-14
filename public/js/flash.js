@@ -1,15 +1,15 @@
-setInterval(function() {
-  var eles = document.getElementsByClassName('ft');
+setInterval(function () {
+  var eles = document.getElementsByClassName('ft')
   for (var i = 0; i < eles.length; i++) {
-    eles[i].style.color = getRandomColor();
+    eles[i].style.color = getRandomColor()
   }
-}, 500 ); //set an interval timer up to repeat the function
+}, 500)
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++ ) {
-    color += letters[Math.floor(Math.random() * 16)];
+function getRandomColor () {
+  var letters = '0123456789ABCDEF'
+  var color = '#'
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)]
   }
-  return color;
+  return color
 }
